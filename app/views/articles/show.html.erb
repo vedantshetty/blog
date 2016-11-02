@@ -1,5 +1,11 @@
 <h1><%= @article.text %></h1>
 <p><%= @article.body %></p>
+<p>
+  <% if @article.image.exists? %>
+      <%= image_tag @article.image.url ( :medium)%><br/>
+  <% end %>
+</p>
+
 
 <h3>Comments</h3>
 <%=render partial: 'articles/comment', collection: @article.comments %>
