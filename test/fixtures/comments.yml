@@ -3,9 +3,9 @@
 one:
   author_name: MyString
   body: MyText
-  article: 
+  article_id: 
 
 two:
   author_name: MyString
   body: MyText
-  article: 
+  article_id: 
