@@ -5,8 +5,6 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -24,7 +22,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+# PostGresSQL database
+gem 'pg', '~> 1.2', '>= 1.2.2'
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
@@ -37,6 +36,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Make errors better looking and more informational
 
+# Use sqlite3 as the database for Active Record
   gem 'better_errors', '~> 2.5', '>= 2.5.1'
 end
 
